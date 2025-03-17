@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list</title>
+    <link rel="stylesheet" href="shop.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="activeTabCart">
+    <section id="header">
+        <a href="code2.html" class="bigger"><img src="images/11008.png" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="code2.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="recipe.html">Recipe</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="icon-cart">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span>0</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="sun">
+        <div class="header">
+    <div class="contentTab">
+        <div class="sep">
+            <h2>Product lists</h2>
+            <p>商品リスト</p>
+            </div>
+        <div class="varity">
+            <h4>Authentic Spices: India</h4>
+            <p>本格スパイス : インド</p>
+        </div>
+        <div class="a">
+            <div class="b">
+        <img src="images/no.png" alt="">
+        <h2>NAME PRODUCT</h2>
+        <div class="price">$200</div>
+        <button class="addCart">
+            Add To Cart
+        </button>
+        </div>
+        </div>
+        <hr class="separator"></hr>
+        <div class="varity1">
+            <h4>Authentic Spice Powders: India</h4>
+            <p>本格スパイスパウダー : インド
+            </p>
+        </div>
+            <div class="c">
+                <div class="d">
+            <img src="images/no.jpg" alt="">
+            <h2>NAME PRODUCT</h2>
+            <div class="price">$200</div>
+            <button class="addCart">
+                Add To Cart
+            </button>
+            </div>
+            </div>
+            <hr class="separator"></hr>
+            <div class="varity2">
+                <h4>Premium Coffee & Tea: Uganda & India</h4>
+                <p>プレミアムコーヒー＆紅茶：ウガンダ＆インド</p>
+            </div>
+            <div class="e">
+                <div class="f">
+            <img src="images/no.png" alt="">
+            <h2>NAME PRODUCT</h2>
+            <div class="price">$200</div>
+            <button class="addCart">
+                Add To Cart
+            </button>
+            </div>
+            </div>
+            <hr class="separator"></hr>
+            <div class="varity3">
+                <h4>Authentic Indian Lentils & Legumes</h4>
+                <p>本格インド豆類</p>
+            </div>
+            <div class="g">
+                <div class="h">
+            <img src="images/no.png" alt="">
+            <h2>NAME PRODUCT</h2>
+            <div class="price">$200</div>
+            <button class="addCart">
+                Add To Cart
+            </button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="cartTab">
+        <div class="hentai">
+        <h1>Shopping Cart<span>
+        合計金額:￥<span id="totalAmount"></span></span><hr class="separator1"></hr></h1>
+        </div>
+        <div class="listCart">
+        </div>
+        <div class="btn">
+            <button class="close">閉じる</button>
+            <button class="checkOut"><a href="checkout.html">お会計に進む</a></button>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col1">
+            <a href="code2.html"><img src="images/sun.png" alt=""></a>
+        </div>
+        <div class="col">
+            <h4>お問い合わせ</h4>
+            <p><strong>住所:</strong> 日本　福岡県　筑前町</p>
+            <p><strong>電話番号:</strong> 080-5241-7816</p>
+            <p><strong>営業時間:</strong> 9:00 - 17:00, 月曜日～金曜日</p>
+            <div class="follow">
+                <h4>フォローする</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/sun_international_ltd/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">会社概要</a>
+            <a href="about.html#scroll-target">事業内容</a>
+            <a href="about.html#scroll">仕入れ元</a>
+            <a href="about.html#scro">お問い合わせの詳細</a>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+
+    <script>
+         document.getElementById("totalAmount").textContent = totalPrice;
+    </script>
+
+</body>
+</html>
